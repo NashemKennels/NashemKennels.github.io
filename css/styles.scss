@@ -1,19 +1,22 @@
 ---
 ---
 
+@mixin background-image($url){
+  background-image: url($url);
+  background-size: cover;
+  background-position: center;
+}
+
 html, body, {
   margin: 0;
 }
 
 body {
-  background-image: url('../images/alps.jpg');
-  background-size: cover;
-  background-position: center;
+  @include background-image('../images/alps.jpg');
 
   .main-header, .footer {
     width: 100%;
     text-align: center;
-
     h1 {
       font-family: Droid Serif;
       color: white;
@@ -24,36 +27,55 @@ body {
   .image-container {
     margin: 0 auto;
     width: 100%;
-    height: 1027px;
     max-width: 1015px;
+    height: 1027px;
     position: relative;
-    overflow: hidden;
     background-color: white;
+    box-shadow: 0 0 40px black;
 
-    img {
+    div {
       width: 500px;
       position: absolute;
+      text-align: center;
+      h1 {
+        opacity: 0;
+      }
     }
-    img:hover {
+
+    div:hover {
       opacity: .5;
+      h1 {
+        opacity: 1.5;
+      }
     }
+
     .dogs {
+      @include background-image('../images/TaylorSara.jpg');
+      height: 637px;
       top: 5px;
       left: 5px;
     }
     .puppies {
+      @include background-image('../images/Annie.jpg');
+      height: 328px;
       top: 382px;
       left: 510px;
     }
     .lost {
+      @include background-image('../images/Austin.jpg');
+      height: 375px;
       top: 647px;
       left: 5px;
     }
     .links {
+      @include background-image('../images/Harley.jpg');
+      height: 307px;
       top: 716px;
       left: 510px;
     }
     .about {
+      @include background-image('../images/Taylor.jpg');
+      height: 373px;
       top: 5px;
       left: 510px;
     }
