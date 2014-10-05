@@ -38,14 +38,14 @@ body {
       top: 5px;
       left: 5px; }
     body .image-container .puppies {
-      background-image: url("../images/Annie.jpg");
+      background-image: url("../images/Annie.JPG");
       background-size: cover;
       background-position: center;
       height: 328px;
       top: 382px;
       left: 510px; }
     body .image-container .lost {
-      background-image: url("../images/Austin.jpg");
+      background-image: url("../images/Austin.JPG");
       background-size: cover;
       background-position: center;
       height: 375px;

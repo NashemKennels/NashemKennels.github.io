@@ -56,13 +56,13 @@ body {
       left: 5px;
     }
     .puppies {
-      @include background-image('../images/Annie.jpg');
+      @include background-image('../images/Annie.JPG');
       height: 328px;
       top: 382px;
       left: 510px;
     }
     .lost {
-      @include background-image('../images/Austin.jpg');
+      @include background-image('../images/Austin.JPG');
       height: 375px;
       top: 647px;
       left: 5px;
