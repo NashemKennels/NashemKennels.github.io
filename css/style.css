@@ -1,0 +1,63 @@
+html, body, {
+  margin: 0;
+}
+
+body {
+  background-image: url('../images/alps.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.main-header, .footer {
+  width: 100%;
+  text-align: center;
+}
+
+.main-header, .footer h1 {
+  font-family: Droid Serif;
+}
+
+.image-container {
+  margin: 0 auto;
+  width: 100%;
+  height: 1027px;
+  max-width: 1015px;
+  border: 2px solid #FF0000;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+}
+
+img {
+  width: 500px;
+  position: absolute;
+}
+
+img:hover {
+  opacity: .5;
+}
+
+.dogs {
+  top: 5px;
+  left: 5px;
+}
+
+.puppies {
+  top: 382px;
+  left: 510px;
+}
+
+.lost {
+  top: 647px;
+  left: 5px;
+}
+
+.links {
+  top: 716px;
+  left: 510px;
+}
+
+.about {
+  top: 5px;
+  left: 510px;
+}
