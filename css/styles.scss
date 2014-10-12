@@ -7,6 +7,18 @@
   background-position: center;
 }
 
+@mixin max-size {
+  height: 100%;
+  width: 100%;
+}
+
+@mixin pos-size($height, $width, $top, $left) {
+  height: $height;
+  width: $width;
+  top: $top;
+  left: $left;
+}
+
 html, body, {
   margin: 0;
 }
@@ -34,50 +46,70 @@ body {
     box-shadow: 0 0 40px black;
 
     div {
-      width: 500px;
       position: absolute;
       text-align: center;
+    }
+
+    .home {
       h1 {
+        font-family: Droid Serif;
+        font-size: 50px;
+        top: 35%;
         opacity: 0;
+        z-index: 2;
+        position: relative;
       }
     }
 
-    div:hover {
-      opacity: .5;
+    .home:hover {
+      .main-img {
+        opacity: .5;
+      }
       h1 {
-        opacity: 1.5;
+        opacity: 1;
+      }
+      a {
+        @include max-size;
+        display: block;
+        position: absolute;
+        top: 0;
       }
     }
 
     .dogs {
-      @include background-image('../images/TaylorSara.jpg');
-      height: 637px;
-      top: 5px;
-      left: 5px;
+      @include pos-size(637px, 500px, 5px, 5px);
+      .main-img {
+        @include background-image('../images/TaylorSara.jpg');
+        @include max-size;
+      }
     }
     .puppies {
-      @include background-image('../images/Annie.JPG');
-      height: 328px;
-      top: 382px;
-      left: 510px;
+      @include pos-size(328px, 500px, 382px, 510px);
+      .main-img {
+        @include background-image('../images/Annie.JPG');
+        @include max-size;
+      }
     }
     .lost {
-      @include background-image('../images/Austin.JPG');
-      height: 375px;
-      top: 647px;
-      left: 5px;
+      @include pos-size(375px, 500px, 647px, 5px);
+      .main-img {
+        @include background-image('../images/Austin.JPG');
+        @include max-size;
+      }
     }
     .links {
-      @include background-image('../images/Harley.jpg');
-      height: 307px;
-      top: 716px;
-      left: 510px;
+      @include pos-size(307px, 500px, 716px, 510px);
+      .main-img {
+        @include background-image('../images/Harley.jpg');
+        @include max-size;
+      }
     }
     .about {
-      @include background-image('../images/Taylor.jpg');
-      height: 373px;
-      top: 5px;
-      left: 510px;
+      @include pos-size(373px, 500px, 5px, 510px);
+      .main-img {
+        @include background-image('../images/Taylor.jpg');
+        @include max-size;
+      }
     }
   }
 }

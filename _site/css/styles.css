@@ -21,47 +21,77 @@ body {
     background-color: white;
     box-shadow: 0 0 40px black; }
     body .image-container div {
-      width: 500px;
       position: absolute;
       text-align: center; }
-      body .image-container div h1 {
-        opacity: 0; }
-    body .image-container div:hover {
+    body .image-container .home h1 {
+      font-family: Droid Serif;
+      font-size: 50px;
+      top: 35%;
+      opacity: 0;
+      z-index: 2;
+      position: relative; }
+    body .image-container .home:hover .main-img {
       opacity: .5; }
-      body .image-container div:hover h1 {
-        opacity: 1.5; }
+    body .image-container .home:hover h1 {
+      opacity: 1; }
+    body .image-container .home:hover a {
+      height: 100%;
+      width: 100%;
+      display: block;
+      position: absolute;
+      top: 0; }
     body .image-container .dogs {
-      background-image: url("../images/TaylorSara.jpg");
-      background-size: cover;
-      background-position: center;
       height: 637px;
+      width: 500px;
       top: 5px;
       left: 5px; }
+      body .image-container .dogs .main-img {
+        background-image: url("../images/TaylorSara.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%; }
     body .image-container .puppies {
-      background-image: url("../images/Annie.JPG");
-      background-size: cover;
-      background-position: center;
       height: 328px;
+      width: 500px;
       top: 382px;
       left: 510px; }
+      body .image-container .puppies .main-img {
+        background-image: url("../images/Annie.JPG");
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%; }
     body .image-container .lost {
-      background-image: url("../images/Austin.JPG");
-      background-size: cover;
-      background-position: center;
       height: 375px;
+      width: 500px;
       top: 647px;
       left: 5px; }
+      body .image-container .lost .main-img {
+        background-image: url("../images/Austin.JPG");
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%; }
     body .image-container .links {
-      background-image: url("../images/Harley.jpg");
-      background-size: cover;
-      background-position: center;
       height: 307px;
+      width: 500px;
       top: 716px;
       left: 510px; }
+      body .image-container .links .main-img {
+        background-image: url("../images/Harley.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%; }
     body .image-container .about {
-      background-image: url("../images/Taylor.jpg");
-      background-size: cover;
-      background-position: center;
       height: 373px;
+      width: 500px;
       top: 5px;
       left: 510px; }
+      body .image-container .about .main-img {
+        background-image: url("../images/Taylor.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%; }
