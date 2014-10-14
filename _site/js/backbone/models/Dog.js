@@ -2,11 +2,12 @@ var Dog = Backbone.Model.extend({
   defaults : {
   name        : '',
   kennelName  : '',
-  credentials : '',
+  credentials : [],
+  mainImg     : {},
   sex         : '',
   born        : '',
   died        : undefined,
-  images      : {},
+  altImgs     : {},
   pedigreeLink: ''
   }
 })

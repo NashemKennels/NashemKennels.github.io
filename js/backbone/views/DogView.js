@@ -1,6 +1,7 @@
 var DogView = Backbone.View.extend({
   template: _.template($('#dog-template').html()),
-  tagName: 'li',
+  tagName: 'div',
+  className: 'dog-profile',
   initialize: function(){
     this.listenTo(this.model, 'all', this.render)
   },

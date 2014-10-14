@@ -1,0 +1,36 @@
+---
+---
+
+.dog-profile {
+  width: 100%;
+  max-width: 1015px;
+  margin: 0 auto;
+  padding: 5px;
+  background-color: white;
+  position: relative;
+
+  .profile-img-container {
+    top: 5px;
+    left: 5px;
+    display: inline-block;
+    text-align: center;
+
+    p {
+      margin-top: 5px;
+      margin-bottom: 0;
+    }
+
+    img {
+      width: 500px;
+      height: auto;
+    }
+
+  }
+
+  .profile-text-container {
+    display: inline-block;
+    position: absolute;
+    margin-left: 5px;
+  }
+
+}
