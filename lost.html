@@ -1,24 +1,66 @@
 <html>
 <head>
-  <title>Nashem Kennels</title>
+  <title>Nashem Kennels: Lost Friends</title>
 
+  <!-- Libraries -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
+
+  <script type='text/template' id='dog-template'>
+    <div class="profile-img-container">
+      <img src='<%- mainImg['img'] %>'/>
+      <p><%- mainImg['caption'] %></p>
+    </div>
+    <div class="profile-text-container">
+      <h1><%- kennelName %></h1>
+      <h2><%- name %></h2>
+      <ul>
+        <% _.each(credentials, function(val, i){ %>
+          <li><%- credentials[i] %></li>
+        <% }) %>
+      </ul>
+      <a href='<%- pedigreeLink %>' target='_blank'>Download Pedigree</a>
+    </div>
+  </script>
+
+  <!-- MODELS -->
+  <script type="text/javascript" src="js/backbone/models/Dog.js"></script>
+
+  <!-- COLLECTIONS -->
+  <script type="text/javascript" src="js/backbone/collections/DogCollection.js"></script>
+
+  <!-- VIEWS -->
+  <script type="text/javascript" src="js/backbone/views/DogView.js"></script>
+  <script type="text/javascript" src="js/backbone/views/DogListView.js"></script>
+
+  <!-- App -->
+  <script type="text/javascript" src="js/app.js"></script>
+
+  <!-- Styles -->
   <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/dog.css">
+
 </head>
 <body>
 
+<div class="main-header">
+  <h1>Our Dogs</h1>
+</div>
+
+<div class="dog-container">
+  <!-- Populates with Backbone template -->
+</div>
 
 <div class="footer">
   <h1>&copy; Nashem Kennels 2014</h1>
 </div>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/app.js"></script>
 <script type="text/javascript">
-  $(function(){
-    window.app = new App();
-    window.app.on();
-  })
+  var app = new App();
+  app.dogPage();
 </script>
+
 </body>
 </html>
