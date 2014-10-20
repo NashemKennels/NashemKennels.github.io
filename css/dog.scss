@@ -3,34 +3,60 @@
 
 .dog-profile {
   width: 100%;
-  max-width: 1015px;
+  max-width: 995px;
   margin: 0 auto;
-  padding: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
   background-color: white;
   position: relative;
+  box-shadow: 0 0 40px black;
 
   .profile-img-container {
-    top: 5px;
-    left: 5px;
     display: inline-block;
     text-align: center;
 
+    .profile-img {
+      width: 400px;
+      height: 350px;
+      background-position: top center;
+      background-size: cover;
+      border: 1px solid #d3d3d3;
+    }
+
     p {
+      background-color: #f9f9f9;
+      min-height: 18px;
+      width: 400px;
       margin-top: 5px;
       margin-bottom: 0;
+      border: 1px solid #d3d3d3;
+      padding: 5px 0;
     }
-
-    img {
-      width: 500px;
-      height: auto;
-    }
-
   }
+
+  .profile-header {
+    display: inline-block;
+    width: 520px;
+    position: absolute;
+    margin-left: 20px;
+    padding: 0 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid #d3d3d3;
+  }
+
 
   .profile-text-container {
     display: inline-block;
+    height: 290px;
+    width: 520px;
     position: absolute;
-    margin-left: 5px;
+    bottom: 10px;
+    margin-left: 20px;
+    padding: 0 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid #d3d3d3;
   }
 
 }

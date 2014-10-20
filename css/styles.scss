@@ -24,16 +24,55 @@ html, body, {
 }
 
 body {
-  @include background-image('../images/alps.jpg');
+  background-color: #ececec;
 
-  .main-header, .footer {
+  .main-header {
+    position: relative;
+    margin: 30px auto;
+    margin-bottom: 30px;
+    max-width: 1015px;
+    height: 281px;
+    @include background-image('../images/alps.jpg');
+    h1 {
+      left: 20px;
+      bottom: 0;
+      position: absolute;
+      font-family: Droid Serif;
+      color: white;
+      margin: 20px 0;
+      font-size: 3em;
+    }
+  }
+
+  .footer {
     width: 100%;
     text-align: center;
-    h1 {
+     h1 {
       font-family: Droid Serif;
       color: white;
       margin: 20px 0;
     }
+  }
+
+
+  .info-container{
+    padding: 10px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 995px;
+    position: relative;
+    background-color: white;
+    box-shadow: 0 0 40px black;
+
+    .about-content {
+      padding: 10px;
+      position: relative;
+      background-color: #f9f9f9;
+      border: 1px solid #d3d3d3;
+      font-family: Droid Serif;
+      font-size: 16px;
+    }
+
   }
 
   .image-container {

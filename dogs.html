@@ -9,12 +9,14 @@
 
   <script type='text/template' id='dog-template'>
     <div class="profile-img-container">
-      <img src='<%- mainImg['img'] %>'/>
+      <div style="background-image: url('<%- mainImg['img'] %>');" class="profile-img"></div>
       <p><%- mainImg['caption'] %></p>
+    </div>
+    <div class="profile-header">
+      <h1><%- name %></h1>
     </div>
     <div class="profile-text-container">
       <h1><%- kennelName %></h1>
-      <h2><%- name %></h2>
       <ul>
         <% _.each(credentials, function(val, i){ %>
           <li><%- credentials[i] %></li>

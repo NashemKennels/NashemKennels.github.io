@@ -1,7 +1,7 @@
 var nashemDogs = [
   {
-    name        : '"Angus"',
-    kennelName  : 'He\'s the Man of Woodmoor CD NDD RN CGC',
+    name        : 'Angus',
+    kennelName  : 'Nashem\'s He\'s the Man of Woodmoor CD NDD RN CGC',
     credentials : ['Multiple BIS BISS CH'],
     mainImg     : {img: '../images/Angus/Angus.JPG', caption: 'Angus, June 2008'},
     sex         : 'male',
@@ -11,8 +11,8 @@ var nashemDogs = [
     pedigreeLink: '../docs/Angus-Ped.pdf'
   },
   {
-    name        : '"Rufio"',
-    kennelName  : 'Play It Again Sapphire',
+    name        : 'Rufio',
+    kennelName  : 'Nashem\'s Play It Again Sapphire',
     credentials : ['BIS CH'],
     mainImg     : {img: '../images/Rufio/Rufio_snow.jpg', caption: 'Rufio in the snow'},
     sex         : 'male',
@@ -22,8 +22,8 @@ var nashemDogs = [
     pedigreeLink: '../docs/Rufio-Ped.pdf'
   },
   {
-    name        : '"Roxie"',
-    kennelName  : 'Party Like a Rock Star',
+    name        : 'Roxie',
+    kennelName  : 'Nashem\'s Party Like a Rock Star',
     credentials : ['CH'],
     mainImg     : {img: '../images/Roxie/Roxie.jpg', caption: 'Little Roxie'},
     sex         : 'female',
@@ -33,8 +33,8 @@ var nashemDogs = [
     pedigreeLink: '' //need Roxie pedigree
   },
   {
-    name        : '"Ziva"',
-    kennelName  : 'Double Dare Ya',
+    name        : 'Ziva',
+    kennelName  : 'Nashem\'s Double Dare Ya',
     credentials : ['CH'],
     mainImg     : {img: '../images/Ziva/Ziva_02.JPG', caption: 'Ziva'},
     sex         : 'female',
@@ -44,8 +44,8 @@ var nashemDogs = [
     pedigreeLink: 'PedigreeZiva.pdf'
   },
   {
-    name        : '"Annie"',
-    kennelName  : 'Dreamboat of Sapphire CD',
+    name        : 'Annie',
+    kennelName  : 'Nashem\'s Dreamboat of Sapphire CD',
     credentials : ['CH'],
     mainImg     : {img: '../images/Annie/Annie-Scottsdale.jpg', caption: 'Annie in Scottsdale'},
     sex         : 'female',
@@ -55,8 +55,8 @@ var nashemDogs = [
     pedigreeLink: '../docs/AnniePedigree.pdf'
   },
   {
-    name        : '"Harley"',
-    kennelName  : 'Swiss Star\'s Criminal Intent',
+    name        : 'Harley',
+    kennelName  : 'Nashem\'s Swiss Star\'s Criminal Intent',
     credentials : ['CH'],
     mainImg     : {img: '../images/Harley/Harley_ears.jpg', caption: 'Harley hears something'},
     sex         : 'female',
@@ -66,8 +66,8 @@ var nashemDogs = [
     pedigreeLink: '../docs/Harley-Ped.pdf'
   },
   {
-    name        : '"Taylor"',
-    kennelName  : 'Taylor Maid CD NDD',
+    name        : 'Taylor',
+    kennelName  : 'Nashem\'s Taylor Maid CD NDD',
     credentials : ['All Breed BIS BISS CH', '14 Best in Shows', '2 BoB Westminster Kennel Club 1996, 1997 Group 3', 'BMDCA BoB 1997, 2008 National Specialty'],
     mainImg     : {img: '../images/Taylor/TaylorRibbons.jpg', caption: 'With her ribbons, December 04, 2005'},
     sex         : 'female',
@@ -77,8 +77,8 @@ var nashemDogs = [
     pedigreeLink: '../docs/Taylor-ped.pdf'
   },
   {
-    name        : '"Ricky"',
-    kennelName  : 'Got It Made CD NDD',
+    name        : 'Ricky',
+    kennelName  : 'Nashem\'s Got It Made CD NDD',
     credentials : ['CH'],
     mainImg     : {img: '../images/Ricky/Ricky.jpg', caption: 'Ricky in the mountains'},
     sex         : 'male',
@@ -88,8 +88,8 @@ var nashemDogs = [
     pedigreeLink: '../docs/Ricky-ped.pdf'
   },
   {
-    name        : '"Vanna"',
-    kennelName  : 'Tailwind Moondance',
+    name        : 'Vanna',
+    kennelName  : 'Nashem\'s Tailwind Moondance',
     credentials : ['CH'],
     mainImg     : {img: '../images/Vanna/HelenVanna1a.jpg', caption: 'Vanna with Helen'},
     sex         : 'female',
@@ -99,8 +99,8 @@ var nashemDogs = [
     pedigreeLink: false
   },
   {
-    name        : '"Austin"',
-    kennelName  : 'Bad to the Bone CD NDD',
+    name        : 'Austin',
+    kennelName  : 'Nashem\'s Bad to the Bone CD NDD',
     credentials : ['CH'],
     mainImg     : {img: '../images/Austin/Austin0001.jpg', caption: 'Austin'},
     sex         : 'male',
@@ -110,8 +110,8 @@ var nashemDogs = [
     pedigreeLink: 'Austin-ped.pdf'
   },
   {
-    name        : '"Teazer"',
-    kennelName  : 'Rumple Teazer',
+    name        : 'Teazer',
+    kennelName  : 'Nashem\'s Rumple Teazer',
     credentials : ['CH'],
     mainImg     : {img: '../images/Teazer/Teazer.jpg', caption: 'Teazer'},
     sex         : 'female',
@@ -121,8 +121,8 @@ var nashemDogs = [
     pedigreeLink: 'Teazer-ped.pdf'
   },
   {
-    name        : '"Gala"',
-    kennelName  : 'Gay Deciever CD NDD',
+    name        : 'Gala',
+    kennelName  : 'Nashem\'s Gay Deciever CD NDD',
     credentials : ['CH'],
     mainImg     : {img: '../images/Gala/gayla.jpg', caption: 'Gala'},
     sex         : 'female',
@@ -132,7 +132,7 @@ var nashemDogs = [
     pedigreeLink: false
   },
   {
-    name        : '"Becken"',
+    name        : 'Becken',
     kennelName  : 'Nashem\'s Becken V Woodmoore CD',
     credentials : ['CH'],
     mainImg     : undefined,
@@ -143,7 +143,7 @@ var nashemDogs = [
     pedigreeLink: false
   },
   {
-    name        : '"Dottie"',
+    name        : 'Dottie',
     kennelName  : 'Nashem\'s Jennany Dots',
     credentials : ['CH'],
     mainImg     : undefined,
@@ -154,7 +154,7 @@ var nashemDogs = [
     pedigreeLink: false
   },
   {
-    name        : '"Strider"',
+    name        : 'Strider',
     kennelName  : 'Nashem\'s Alpine Strider',
     credentials : ['CH'],
     mainImg     : undefined,
@@ -165,7 +165,7 @@ var nashemDogs = [
     pedigreeLink: false
   },
   {
-    name        : '"Caty"',
+    name        : 'Caty',
     kennelName  : 'Mijay\'s Calamity Jane',
     credentials : [],
     mainImg     : undefined,
@@ -186,6 +186,10 @@ var App = function(){
 
   this.dogPage = function(){
     initializeDogs();
+  }
+
+  this.lostDogPage = function(){
+    initializeLostDogs();
   }
 
   var initializeDogs = function(){
