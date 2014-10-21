@@ -53,13 +53,22 @@ body {
     body .image-container div {
       position: absolute;
       text-align: center; }
-    body .image-container .home h1 {
-      font-family: Droid Serif;
-      font-size: 50px;
-      top: 35%;
-      opacity: 0;
-      z-index: 2;
-      position: relative; }
+    body .image-container .home {
+      transition: opacity .5s ease-in-out; }
+      body .image-container .home.fade {
+        opacity: .5; }
+      body .image-container .home h1 {
+        font-family: Droid Serif;
+        font-size: 50px;
+        top: 35%;
+        opacity: 0;
+        z-index: 2;
+        position: relative;
+        transition: opacity .5s ease-in-out; }
+      body .image-container .home a {
+        text-decoration: none; }
+      body .image-container .home a:visited {
+        color: black; }
     body .image-container .home:hover .main-img {
       opacity: .5; }
     body .image-container .home:hover h1 {
@@ -125,3 +134,7 @@ body {
         background-position: center;
         height: 100%;
         width: 100%; }
+  body .visible {
+    opacity: 1; }
+  body .visible {
+    opacity: 0; }

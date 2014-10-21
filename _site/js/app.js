@@ -178,10 +178,11 @@ var nashemDogs = [
 ]
 
 var App = function(){
-  var $homeImgs = $('.image-container').children();
+  var $homeImgs = $('.home')
+  ,   $titles   = $('.home h1');
 
   this.homePage = function(){
-    $homeImgs.fadeIn();
+    homePageAnimate();
   };
 
   this.dogPage = function(){
@@ -190,6 +191,19 @@ var App = function(){
 
   this.lostDogPage = function(){
     initializeLostDogs();
+  }
+
+  var homePageAnimate = function(){
+    setTimeout(fadeHomeImgs, 500);
+    setTimeout(fadeHomeImgs, 1000);
+  }
+
+  var fadeHomeImgs = function(){
+    $homeImgs.toggleClass('fade');
+  }
+
+  var toggleTitles = function(){
+    $titles.toggleClass('visible');
   }
 
   var initializeDogs = function(){

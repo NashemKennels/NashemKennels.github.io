@@ -19,6 +19,11 @@
   left: $left;
 }
 
+@mixin transition {
+  -webkit-transition: opacity 1s linear;
+  transition: opacity 1s linear;
+}
+
 html, body, {
   margin: 0;
 }
@@ -90,6 +95,10 @@ body {
     }
 
     .home {
+      transition: opacity .5s ease-in-out;
+      &.fade {
+        opacity: .5;
+      }
       h1 {
         font-family: Droid Serif;
         font-size: 50px;
@@ -97,6 +106,13 @@ body {
         opacity: 0;
         z-index: 2;
         position: relative;
+        transition: opacity .5s ease-in-out;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:visited {
+        color: black
       }
     }
 
@@ -150,6 +166,12 @@ body {
         @include max-size;
       }
     }
+  }
+  .visible {
+    opacity: 1;
+  }
+  .visible {
+    opacity: 0;
   }
 }
 
