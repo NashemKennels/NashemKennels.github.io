@@ -206,6 +206,17 @@ var App = function(){
     $titles.toggleClass('visible');
   }
 
+  var resizeKennelName = function(){
+    var kennelNames = $('.profile-header h2');
+    $.each(kennelNames, function(){
+      while ($(this).height() > 28){
+        var size = parseInt($(this).css('font-size'));
+        size--
+        $(this).css('font-size', size);
+      }
+    })
+  }
+
   var initializeDogs = function(){
     dogCollection = new DogCollection(); //creates empty dog collection
 
@@ -217,6 +228,7 @@ var App = function(){
     });
 
     dogListView = new DogListView({collection: dogCollection, el: $('.dog-container') });
+    resizeKennelName();
   };
 
   var initializeLostDogs = function(){

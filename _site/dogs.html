@@ -14,9 +14,11 @@
     </div>
     <div class="profile-header">
       <h1><%- name %></h1>
+      <h2><%- kennelName %></h2>
     </div>
     <div class="profile-text-container">
-      <h1><%- kennelName %></h1>
+    <p>Born: <%- born %></p>
+    <h3>Credentials</h3>
       <ul>
         <% _.each(credentials, function(val, i){ %>
           <li><%- credentials[i] %></li>
